@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3836673983.index
+/gama.com/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1403383352.index
+/gamachicas.com/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1030173430.index
+/responsive-bootstrap-sites/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/186516047.index
+/gama.com/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1357486403.index
+/gama.com/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3594475454.index
+/responsive-bootstrap-sites/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/189381305.index
+/gamachicas.com.pe/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/332263958.index
+/gamachicas.com/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3600294553.index
+/gamachicas.com.pe/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3400998554.index
+/gama.com/src/main/java
+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/746648870.index
+/gama.com/src/main/java

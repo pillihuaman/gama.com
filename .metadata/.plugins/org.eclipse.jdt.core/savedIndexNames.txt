@@ -1,0 +1,18 @@
+INDEX VERSION 1.131+/home/zarmir/Documentos/Gama/.metadata/.plugins/org.eclipse.jdt.core
+2710532726.index
+916933544.index
+2645312864.index
+2561906264.index
+3583429875.index
+3800535896.index
+1359648204.index
+3991262401.index
+2285171455.index
+2197764462.index
+994638581.index
+730052381.index
+4065568231.index
+1253882397.index
+3063547738.index
+3726008959.index
+3399756394.index
