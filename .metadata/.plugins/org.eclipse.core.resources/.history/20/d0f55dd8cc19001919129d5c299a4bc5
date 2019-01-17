@@ -1,0 +1,5 @@
+package infrastructure.System.Adapters;
+
+public class MySqlAdapter {
+
+}

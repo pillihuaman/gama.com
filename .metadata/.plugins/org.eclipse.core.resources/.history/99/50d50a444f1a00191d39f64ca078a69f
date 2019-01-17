@@ -1,0 +1,11 @@
+package common.System.configuration;
+
+public class AppContextListener implements ServletContextListener {
+
+    public void contextInitialized(ServletContextEvent servletContextEvent) {
+        ServletContext ctx = servletContextEvent.getServletContext();
+
+        String url = ctx.getInitParameter("DBURL");
+        String u = ctx.getInitParameter("DBUSER");
+        String p = ctx.getInitParameter("DBPWD");
+}}

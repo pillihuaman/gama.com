@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Tue Jan 15 04:01:01 PST 2019
+#Thu Jan 17 06:43:46 PST 2019
 org.eclipse.jst.j2ee.server\:/binary\:/root/.m2/repository/org/apache/tomcat/tomcat-jasper/9.0.12/tomcat-jasper-9.0.12.jar=WEB-INF/lib/tomcat-jasper-9.0.12.jar
 org.eclipse.jst.j2ee.server\:/binary\:/root/.m2/repository/org/springframework/spring-web/4.3.0.RELEASE/spring-web-4.3.0.RELEASE.jar=WEB-INF/lib/spring-web-4.3.0.RELEASE.jar

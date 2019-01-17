@@ -1,0 +1,54 @@
+package infrastructure.System.Adapters;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.*;
+
+public class MySqlAdapter {
+	 public  static Connection getConnection ()
+	    {
+	        Connection con= null;
+	         try
+	         {
+	        
+	         
+	         Class.forName("oracle.jdbc.driver.OracleDriver");
+	         con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","gamachicas","123456");
+	         }
+	         catch(ClassNotFoundException | SQLException ex)
+	         {
+	               ex.getMessage();
+	         
+	         }
+	        
+	    return  con;
+	    }
+
+	 public void connectDatabase(String host, String port, String database,
+	            String user, String password) {
+	        String url = null;
+	        try {
+	            // We register the MySQL driver
+	            // Registramos el driver de MySQL
+	            try {
+	                Class.forName("com.mysql.jdbc.Driver");
+	            } catch (ClassNotFoundException ex) {
+	                System.out.println("Error al registrar el driver de MySQL: " + ex);
+	            }
+	            Connection connection = null;
+	            url ="jdbc:mysql://" + host + ":" + port + "/" + database;
+	            // Database connect
+	            // Conectamos con la base de datos
+	            connection = DriverManager.getConnection(
+	                    url,
+	                    user, password);           
+	            boolean valid = connection.isValid(50000);
+	            System.out.println(valid ? "TEST OK" : "TEST FAIL");
+	        } catch (java.sql.SQLException sqle) {
+	            System.out.println("Error al conectar con la base de datos de MySQL (" + url + "): " + sqle);
+	        }
+	    }       
+	}
+
+

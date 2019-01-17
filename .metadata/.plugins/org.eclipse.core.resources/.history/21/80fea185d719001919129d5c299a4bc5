@@ -1,0 +1,54 @@
+package infrastructure.System.Adapters;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.*;
+
+public class MySqlAdapter {
+	 public  static Connection getConnection ()
+	    {
+	        Connection con= null;
+	         try
+	         {
+	        
+	         
+	         Class.forName("oracle.jdbc.driver.OracleDriver");
+	         con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","gamachicas","123456");
+	         }
+	         catch(ClassNotFoundException | SQLException ex)
+	         {
+	               ex.getMessage();
+	         
+	         }
+	        
+	    return  con;
+	    }
+	    /**
+	     * We establish the connection with the database <b>customerdb</b>.
+	     * Establecemos la conexión con la base de datos <b>customerdb</b>.
+	     */
+	    public void connectDatabase() {
+	        try {
+	            // We register the MySQL (MariaDB) driver
+	            // Registramos el driver de MySQL (MariaDB)
+	            try {
+	                Class.forName("com.mysql.jdbc.Driver");
+	            } catch (ClassNotFoundException ex) {
+	                System.out.println("Error al registrar el driver de MySQL: " + ex);
+	            }
+	            Connection connection = null;
+	            // Database connect
+	            // Conectamos con la base de datos
+	            connection = DriverManager.getConnection(
+	                    "jdbc:mysql://192.168.0.26:3306/customerdb",
+	                    "xulescode", "xulescode");
+	            boolean valid = connection.isValid(50000);
+	            System.out.println(valid ? "TEST OK" : "TEST FAIL");
+	        } catch (java.sql.SQLException sqle) {
+	            System.out.println("Error: " + sqle);
+	        }
+	    }    
+	}
+
+
