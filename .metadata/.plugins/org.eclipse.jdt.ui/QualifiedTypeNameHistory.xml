@@ -3,9 +3,13 @@
 <fullyQualifiedTypeName name="infrastructure.System.Adapters.MySqlAdapter"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContextListener"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-<fullyQualifiedTypeName name="common.System.configuration.AppContextListener"/>
-<fullyQualifiedTypeName name="com.sun.xml.rpc.processor.modeler.j2ee.xml.string"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContextEvent"/>
+<fullyQualifiedTypeName name="common.System.configuration.AppContextListener"/>
+<fullyQualifiedTypeName name="common.System.configuration.listConfig"/>
+<fullyQualifiedTypeName name="java.beans.AppletInitializer"/>
+<fullyQualifiedTypeName name="com.sun.xml.rpc.processor.modeler.j2ee.xml.string"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+<fullyQualifiedTypeName name="common.System.configuration.ruta"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
