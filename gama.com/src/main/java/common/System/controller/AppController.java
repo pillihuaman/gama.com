@@ -1,6 +1,8 @@
 package common.System.controller;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -13,30 +15,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.sun.xml.rpc.processor.modeler.j2ee.xml.string;
 
 import common.System.configuration.AppPropertiesConfig;
+import domain.System.BusinessEntity.ViewStockBE;
+
 import  infrastructure.System.Adapters.*;
+import model.system.repository.stockClothes;
  
 @Controller
 @RequestMapping("/")
 public class AppController {
  
     @RequestMapping(value = { "/"}, method = RequestMethod.GET)
-    public String homePage(ModelMap model) throws IOException {
-    	
-    	AppPropertiesConfig obs = new AppPropertiesConfig();
-    	obs.getPropValues("hello");
-    
-    
-    	String host="localhost"; 
-    	String port="3306"; 
-    	String database="Gamachicas"; 
-    	String user="root"; 
-    	String password="1988deza"; 
-
-    	
-    	MySqlAdapter ob = new MySqlAdapter();
-    	//javaMySQLBasic.connectDatabase("localhost.localdomain", "3306", "Gamachicas","gamachicas", "1988deza");
-    	ob.connectDatabase(host, port, database, user, password);
-    	
+    public String homePage(ModelMap model) throws IOException, SQLException {
+    	ViewStockBE objs= new ViewStockBE();
+    	stockClothes stockClothes= new stockClothes();
+    	stockClothes.getViewStock(objs);
         return "home";
     }
     

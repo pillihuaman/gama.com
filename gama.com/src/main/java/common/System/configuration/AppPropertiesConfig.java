@@ -25,15 +25,10 @@ public class AppPropertiesConfig {
 		Date time = new Date(System.currentTimeMillis());
 
 		// get the property value and print it out
-		String user = prop.getProperty("user");
-		String company1 = prop.getProperty("company1");
-		String company2 = prop.getProperty("company2");
-		String company3 = prop.getProperty("company3");
-	value=user;
+		 result = prop.getProperty(value);
 
-		result = "Company List = " + company1 + ", " + company2 + ", " + company3;
 	
-		System.out.println(result + "\nProgram Ran on " + time + " by user=" + user);
+		System.out.println(result + "\nProgram Ran on " + time + " by user=" + result);
 	} catch (Exception e) {
 		System.out.println("Exception: " + e);
 	} finally {
