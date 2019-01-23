@@ -20,7 +20,7 @@ public class stockClothesDA {
 			CallableStatement callableStatement = null;
 			ResultSet rs = null;
 	            List<ViewStockBE> lst =new ArrayList<ViewStockBE>();
-			String getDBUSERCursorSql = "{CALL Gamachicas.SelectMenuParent()}";
+			String getDBUSERCursorSql = "{CALL SelectMenuParent()}";
 
 			try {
 				dbConnection = MySqlAdapter.connectDatabase();
@@ -34,9 +34,21 @@ public class stockClothesDA {
 				//rs = (ResultSet) callableStatement.getObject(2);
 
 				while (hadResults) {
+
 					   ResultSet resultSet = callableStatement.getResultSet();
-					    String name = resultSet.getString("name");
-	                    String path = resultSet.getString("path");
+					  // process result set
+	                while (resultSet.next()) {
+	                	  String name = resultSet.getString("name");
+		                    String path = resultSet.getString("path");
+	          
+	 
+	                    System.out.println(
+	                            "| " + name + " | " + path );
+	                }
+	 
+	                
+	                
+					  
 				}
 
 			} catch (SQLException e) {

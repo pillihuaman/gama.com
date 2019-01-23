@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="infrastructure.System.Adapters.MySqlAdapter"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContextListener"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContextEvent"/>
@@ -11,5 +10,13 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
 <fullyQualifiedTypeName name="common.System.configuration.ruta"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebListener"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="common.System.configuration.AppPropertiesConfig"/>
+<fullyQualifiedTypeName name="infrastructure.System.Adapters.MySqlAdapter"/>
+<fullyQualifiedTypeName name="domain.System.BusinessEntity.ViewStockBE"/>
+<fullyQualifiedTypeName name="domain.System.BusinessEntity.BusinessLogic.stockClothesBL"/>
+<fullyQualifiedTypeName name="model.system.repository.stockClothes"/>
 </qualifiedTypeNameHistroy>
