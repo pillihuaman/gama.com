@@ -28,14 +28,14 @@ public class stockClothesDA {
 				//callableStatement.registerOutParameter(1, OracleTypes.CURSOR);
 
 				// execute getDBUSERCursor store procedure
-				boolean hadResults=callableStatement.execute();
+			 callableStatement.execute();
 
 				// get cursor and cast it to ResultSet
 				//rs = (ResultSet) callableStatement.getObject(2);
 
-				while (hadResults) {
 
 					   ResultSet resultSet = callableStatement.getResultSet();
+					
 					  // process result set
 	                while (resultSet.next()) {
 	                	  String name = resultSet.getString("name");
@@ -45,11 +45,8 @@ public class stockClothesDA {
 	                    System.out.println(
 	                            "| " + name + " | " + path );
 	                }
+	                resultSet.close();
 	 
-	                
-	                
-					  
-				}
 
 			} catch (SQLException e) {
 
